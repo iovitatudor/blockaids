@@ -1,0 +1,25 @@
+@import "null.scss";
+@import "variables.scss";
+
+// @font-face {
+//     font-family: manrope;
+//     src: url(@/fonts/Manrope-VariableFont_wght.ttf);
+// }
+
+* {
+    //font-family: manrope, sans-serif !important;
+ }
+
+ @mixin rwdmax($screen) {
+    @media (max-width: $screen+"px") {
+        @content;
+    }
+}
+
+@mixin rwdmin($screen) {
+    @media (min-width: $screen+"px") {
+        @content;
+    }
+}
+
+

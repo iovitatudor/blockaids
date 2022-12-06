@@ -1,8 +1,8 @@
 <template>
   <v-col>
     <v-card color="transparent" elevation="0" class="solution mt-4">
-      <v-img :src="imgUrl" contain alt="step icon" height="150" />
-      <v-card-text class="justify-center text-center">{{
+      <v-img :src="imgUrl" contain alt="step icon" height="100" />
+      <v-card-text class="solution-text justify-center text-center">{{
         step.text
       }}</v-card-text>
     </v-card>
@@ -10,6 +10,7 @@
 </template>
 <script>
 export default {
+  name: "SolutionCard",
   props: {
     step: { type: Object, required: true },
   },
@@ -20,4 +21,10 @@ export default {
   },
 };
 </script>
-<style lang=""></style>
+<style lang="scss">
+.solution-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+}
+</style>

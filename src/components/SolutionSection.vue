@@ -6,7 +6,6 @@
         A transformative, highly secure, and self-sustaining healthcare
         ecosystem secured by Blockchain.
       </p>
-
       <v-row>
         <SolutionCard
           v-for="(step, index) in steps"
@@ -18,10 +17,10 @@
   </v-container>
 </template>
 <script>
-import SolutionCard from "./ui/SolutionCard.vue";
+import SolutionCard from "@/components/ui/SolutionCard.vue";
 
 export default {
-  comments: {
+  components: {
     SolutionCard,
   },
 

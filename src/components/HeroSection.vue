@@ -3,8 +3,7 @@
     <v-container grid-list-md class="my-14">
       <v-row justify="space-between" align="center" class="mt-16">
         <v-col md="6" sm="12">
-          <LogoIcon class="logo-hero" height="80" />
-
+          <h1 class="name" ref="name">BlockAids</h1>
           <p class="subtitle" ref="subtitle">
             Transforming the healthcare landscape all over the world
           </p>
@@ -32,12 +31,7 @@
   </v-container>
 </template>
 <script>
-import LogoIcon from "./icons/LogoIcon.vue";
-
 export default {
-  components: {
-    LogoIcon,
-  },
   data: () => ({
     width: 0,
   }),
@@ -53,6 +47,7 @@ export default {
           this.$refs.name.classList.add("text-center");
           this.$refs.subtitle.classList.add("text-center");
           this.$refs.subsubtitle.classList.add("text-center");
+          this.$refs.logo.classList.add("logo-small");
         }
       },
       deep: true,
@@ -64,8 +59,14 @@ export default {
 };
 </script>
 <style lang="scss">
-.logo-hero {
-  width: 450px !important;
+.name {
+  font-size: 100px;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  letter-spacing: 0.09em;
+  @include rwdmax(500) {
+    font-size: 50px;
+  }
 }
 
 .subtitle {

@@ -7,8 +7,6 @@
   >
     <v-col md="6" sm="12">
       <v-img :src="imgUrl" max-height="400" max-width="400"> </v-img>
-
-      {{ condition }}
     </v-col>
     <v-col md="6" sm="12">
       <p class="mission-text">{{ item.text }}</p>

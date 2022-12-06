@@ -2,7 +2,7 @@
   <v-container class="bckg footer" fluid>
     <v-container grid-list-md class="my-14">
       <v-row justify="space-between">
-        <v-col align="center" cols="2">
+        <v-col align="center" md="2" cols="12">
           <LogoIcon />
           <v-row justify="center" align="center" class="mt-5">
             <a
@@ -24,7 +24,7 @@
               ><YtIcon /> </a
           ></v-row>
         </v-col>
-        <v-col align-self="center" md="6">
+        <v-col align-self="center" md="6" cols="12">
           <v-row>
             <v-col md="4">
               <ul>

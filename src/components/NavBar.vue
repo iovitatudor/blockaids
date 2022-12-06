@@ -1,17 +1,17 @@
 <template>
-  <v-container fluid>
+  <v-container fluid class="bckg">
     <header :class="{ 'scrolled-nav': scrollPosition }">
-      <nav>
+      <nav class="my-3">
         <div v-show="!mobile" class="navigation">
           <div class="branding">
             <LogoIcon class="logo-header" height="50" />
           </div>
           <ul class="navigation__list">
-            <li><a to="#" class="menu-item">About</a></li>
-            <li><a to="#" class="menu-item">Business model</a></li>
-            <li><a to="#" class="menu-item">Team </a></li>
-            <li><a to="#" class="menu-item">Roadmap</a></li>
-            <li><a class="menu-item">PitchDeck</a></li>
+            <li><a href="#" class="menu-item">Our mission</a></li>
+            <li><a href="#" class="menu-item">Our Solution</a></li>
+            <li><a href="#" class="menu-item">Ecosystem</a></li>
+            <li><a href="#" class="menu-item">Our Team</a></li>
+            <li><a href="#" class="menu-item">Roadmap</a></li>
           </ul>
           <v-btn class="btn-main">Connect wallet</v-btn>
         </div>
@@ -191,7 +191,7 @@ header {
       width: 100%;
       max-width: 250px;
       height: 100%;
-      background-color: $primary;
+      background-color: $bckg-blue;
       top: 0;
       left: 0;
 
@@ -209,8 +209,8 @@ header {
       }
 
       button {
-        background-color: #fff !important;
-        color: $primary !important;
+        background-color: $primary !important;
+        color: #fff !important;
         width: 70%;
         margin-top: 17px;
       }

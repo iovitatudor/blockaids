@@ -31,31 +31,37 @@ export default {
     width: 0,
     steps: [
       {
-        date: "2021 - 2022",
-        text: ["- Building ecosystem based on sharing the use of assets"],
-      },
-      {
         date: "2022",
         text: [
-          "- Blockchain technology study, building team",
-          "- P2P marketplace conceptualization",
+          "- Building community of HIV infected and  groups of risk in Moldova (more than 30k membars)",
         ],
       },
       {
-        date: "2023 - Q1",
+        date: "2023 Q1",
         text: [
-          "- Sharing (peer) economy concept",
-          "- Artcoin smart-contract",
-          "- Authorization System as SaaS on blockchain",
-          "- Artcoin exchange service as SaaS",
+          "- Creating DAO for communities",
+          "- Creating DAOs for small communities (i.e. groups of risk)",
+          "- Governance token release",
         ],
       },
       {
-        date: "2023 - Q2",
+        date: "2023 Q2",
         text: [
-          "- Launch (Mainnet)",
-          "- Community expansion, mediatization",
-          "- Preparation for fundraising, IDO, TGE, etc.",
+          "Building Web/Mobile app on blockchain:",
+          "- Identification (KYC)",
+          "- Transparency",
+          "- Anonymity",
+          "- Unified information and tracking system",
+        ],
+      },
+      {
+        date: "2023 Q3",
+        text: [
+          "Building new ecosystem of HIV infected and  groups of risk:",
+          "- Anonymous social groups",
+          "- Learning resources, incl. Learn2Earn",
+          "- Events organization",
+          "- NFT/token rewards programs",
         ],
       },
     ],

@@ -1,236 +1,203 @@
 <template>
-  <v-container grid-list-md class="my-14">
-    <p class="title-h1 text-center">Ecosystem</p>
-    <v-tabs centered  v-model="tab">
-        <v-tab ripple="false"> Mobile App </v-tab>
-        <v-tab ripple="false"> BlockAids Tokens </v-tab>
-        <v-tab ripple="false"> BlockAids DAO </v-tab>
-        <v-tab-item class="tab-list">
-          <v-container grid-list>
-            <v-row>
-              <v-col class="d-flex flex-column" align-self="stretch">
-                <v-row class="align-center justify-end">
-                  <v-col>
-                    <v-row class="d-flex align-center">
-                      <v-col>
-                        Produce COVID vaccination certificate saved on an NFT. WHO compliant for work
-                        and travel
-                      </v-col>
-                      <v-col>
-                        <img src="@/assets/img/ecosystem1-1.svg" alt="" />
-                      </v-col>
-                    </v-row>
-                  </v-col>
-                </v-row>
-                <v-row class="align-center justify-end">
-                  <v-col>
-                    <v-row class="d-flex align-center">
-                      <v-col>
-                        Produce COVID vaccination certificate saved on an NFT. WHO compliant for work
-                        and travel
-                      </v-col>
-                      <v-col>
-                        <img src="@/assets/img/ecosystem1-2.png" alt="" />
-                      </v-col>
-                    </v-row>
-                  </v-col>
-                </v-row>
-              </v-col>
-              <v-col><img src="@/assets/img/unboard.png" alt="" /></v-col>
-              <v-col class="d-flex flex-column" align-self="stretch">
-                <v-row class="align-center justify-end">
-                  <v-col>
-                    <v-row class="d-flex align-center">
-                      <v-col>
-                        Produce COVID vaccination certificate saved on an NFT. WHO compliant for work
-                        and travel
-                      </v-col>
-                      <v-col>
-                        <img src="@/assets/img/ecosystem1-3.svg" alt="" />
-                      </v-col>
-                    </v-row>
-                  </v-col>
-                </v-row>
-                <v-row class="align-center justify-end">
-                  <v-col>
-                    <v-row class="d-flex align-center">
-                      <v-col>
-                        Produce COVID vaccination certificate saved on an NFT. WHO compliant for work
-                        and travel
-                      </v-col>
-                      <v-col>
-                        <img src="@/assets/img/ecosystem1-4.svg" alt="" />
-                      </v-col>
-                    </v-row>
-                  </v-col>
-                </v-row>
-              </v-col>
-            </v-row>
-            <!-- <v-row align-self="start">
-                          <v-col col="4">sda</v-col>
-                          <v-col col="4"><img src="@/assets/img/unboard.png" alt=""></v-col>
-                          <v-col col="4">sda</v-col>
-                      </v-row>
-                      <v-row align-self="start">
-                          <v-col col="4">sda</v-col>
-                          <v-col col="4">sda</v-col>
-                      </v-row> -->
-          </v-container>
-        </v-tab-item>
-  
+  <v-container fluid>
+    <v-container grid-list-md class="my-14">
+      <p class="title-h1 text-center">Ecosystem</p>
+      <v-tabs class="tab-list" centered v-model="tab">
+        <v-tab key="mob-app"> Mobile App </v-tab>
+        <v-tab key="tokens"> BlockAids Tokens </v-tab>
+        <v-tab key="dao"> BlockAids DAO </v-tab>
         <v-tab-item>
-          <v-container fill-heigth style="max-width: 45%; margin: 0 auto; font-size: 18px">
-            <v-row>
-              <v-col class="d-flex flex-column justify-center">
-                <div class="d-flex flex-column align-end">
-                  <svg
-                    width="84"
-                    height="84"
-                    viewBox="0 0 84 84"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="42" cy="42" r="42" fill="#19CAC1" />
-                    <path
-                      d="M64.5622 44.0978C63.7399 42.8116 62.5905 41.7508 61.2237 41.017C59.857 40.2832 58.3187 39.9007 56.7557 39.9062H28.1647C26.962 39.9073 25.7782 39.616 24.7221 39.059C23.6661 38.5021 22.7714 37.6974 22.1204 36.7188C21.4655 35.7487 21.091 34.6265 21.036 33.469C20.9809 32.3114 21.2474 31.1607 21.8075 30.1366L27.7694 18.9803L30.1081 21.5781L25.5955 30.025L40.1545 21.0044C40.4886 20.793 40.8958 20.7188 41.2866 20.798C41.6773 20.8772 42.0195 21.1034 42.2379 21.4267C42.4563 21.7501 42.533 22.1441 42.4511 22.5222C42.3693 22.9003 42.1356 23.2315 41.8014 23.4428L24.5085 34.1369C24.6011 34.4291 24.7341 34.7079 24.9038 34.9656C25.2088 35.4074 25.6102 35.779 26.0797 36.0544C26.5492 36.3297 27.0754 36.5021 27.6212 36.5594L41.4226 27.9531C41.7545 27.7529 42.1542 27.6862 42.5362 27.7673C42.9183 27.8483 43.2524 28.0707 43.4674 28.3868C43.6823 28.703 43.7611 29.088 43.6867 29.4596C43.6124 29.8312 43.3909 30.1599 43.0696 30.3756L33.0067 36.6231H45.8529L49.822 28.9413C50.5305 27.5807 50.8673 26.0672 50.8003 24.5451C50.7332 23.0229 50.2647 21.5427 49.4392 20.2453C48.6136 18.948 47.4587 17.8768 46.0843 17.1337C44.7098 16.3905 43.1617 16.0003 41.5873 16H26.4189C26.1103 15.9994 25.8076 16.0828 25.5456 16.2406C25.2835 16.3984 25.0725 16.6243 24.9367 16.8925L17.9866 30.1684C17.2781 31.529 16.9413 33.0424 17.0084 34.5646C17.0754 36.0868 17.544 37.567 18.3695 38.8643C19.195 40.1617 20.3499 41.2329 21.7244 41.976C23.0988 42.7191 24.6469 43.1094 26.2213 43.1097H38.8204L33.1714 54.0587C32.4629 55.4193 32.1262 56.9328 32.1932 58.4549C32.2602 59.9771 32.7288 61.4573 33.5543 62.7547C34.3798 64.052 35.5348 65.1232 36.9092 65.8663C38.2836 66.6095 39.8317 66.9997 41.4062 67H56.6898C57.0235 66.9978 57.3486 66.8976 57.6222 66.7126C57.8957 66.5276 58.1047 66.2666 58.2215 65.9641L65.0398 52.8316C65.7445 51.4593 66.0708 49.9341 65.9872 48.4039C65.9035 46.8737 65.4126 45.3904 64.5622 44.0978ZM40.8297 53.5647C40.6099 53.2453 40.5298 52.8547 40.6069 52.4783C40.6841 52.1019 40.9123 51.7705 41.2415 51.5566L51.1231 45.3728C51.466 45.1615 51.8816 45.0906 52.2785 45.1758C52.6754 45.261 53.0211 45.4952 53.2395 45.827C53.4579 46.1588 53.5311 46.561 53.4431 46.9451C53.355 47.3292 53.113 47.6637 52.7701 47.875L42.8884 54.0587C42.723 54.1626 42.5381 54.2338 42.3442 54.2684C42.1503 54.303 41.9513 54.3002 41.7586 54.2603C41.5658 54.2203 41.3831 54.1439 41.2209 54.0355C41.0587 53.9271 40.9201 53.7887 40.8133 53.6284L40.8297 53.5647ZM59.3579 51.6044L44.5353 60.8162C44.3699 60.9209 44.1848 60.993 43.9905 61.0284C43.7963 61.0638 43.5967 61.0618 43.4033 61.0226C43.2098 60.9834 43.0262 60.9077 42.863 60.7998C42.6998 60.6919 42.5601 60.554 42.452 60.3939C42.3438 60.2338 42.2693 60.0546 42.2327 59.8667C42.1961 59.6787 42.1982 59.4856 42.2387 59.2984C42.2792 59.1112 42.3575 58.9335 42.4689 58.7756C42.5804 58.6176 42.7229 58.4825 42.8884 58.3778L57.7109 49.1659C57.8764 49.0613 58.0615 48.9892 58.2557 48.9538C58.45 48.9184 58.6495 48.9203 58.843 48.9596C59.0365 48.9988 59.22 49.0745 59.3833 49.1824C59.5465 49.2902 59.6862 49.4282 59.7943 49.5883C59.9024 49.7484 59.9769 49.9275 60.0135 50.1155C60.0501 50.3035 60.0481 50.4966 60.0076 50.6838C59.967 50.871 59.8888 51.0487 59.7773 51.2066C59.6658 51.3646 59.5233 51.4997 59.3579 51.6044Z"
-                      fill="white"
-                    />
-                  </svg>
-  
-                  <p class="mt-10" style="text-align: right">
-                    AIDS tokens are a new digital asset unique to the Immunify.Life ecosystem which
-                    will be used to transfer value between users, healthcare providers and other
-                    participants. AIDS tokens power the Immunify.Life ecosystem.
-                  </p>
-                </div>
+          <v-container grid-list-md>
+            <v-row class="justify-center">
+              <v-col lg="4" cols="11" align-self="center">
+                <v-row class="align-center flex-wrap flex-lg-nowrap justify-center mt-16 mt-lg-0">
+                  <div class="mx-4">
+                    <p class="text-center text-lg-right mt-lg-0 mt-6">
+                      All necessary information about services including testing and treatment.
+                      Chatbots in a single IT system will be able to respond to low-threshold
+                      queries related to existing needs and basic knowledge
+                    </p>
+                  </div>
+                  <div class="order-first order-lg-0">
+                    <img src="@/assets/img/ecosystem1-1.svg" alt="" />
+                  </div>
+                </v-row>
+                <v-row class="align-center flex-wrap flex-lg-nowrap justify-center mt-15">
+                  <div class="mx-4">
+                    <p class="text-center text-lg-right w-0 mt-lg-0 mt-6">
+                      Mechanisms for the protection of rights, monitoring by the community of
+                      quality and access to services, the use of public resources will be
+                      strengthened
+                    </p>
+                  </div>
+                  <div class="order-first order-lg-0">
+                    <img src="@/assets/img/ecosystem1-2.png" alt="" />
+                  </div>
+                </v-row>
               </v-col>
-              <v-col>
-                <div class="d-flex justify-center">
-                  <img src="@/assets/img/ecosystem-2.jpg" alt="" />
-                </div>
+              <v-col col="11" lg="4" class="text-center order-last order-lg-0 pa-0">
+                <img src="@/assets/img/unboard.png" alt="" />
               </v-col>
-              <v-col class="d-flex flex-column justify-center">
-                <div class="d-flex flex-column align-start">
-                  <svg
-                    width="84"
-                    height="84"
-                    viewBox="0 0 84 84"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="42" cy="42" r="42" fill="#19CAC1" />
-                    <path
-                      d="M64.5622 44.0978C63.7399 42.8116 62.5905 41.7508 61.2237 41.017C59.857 40.2832 58.3187 39.9007 56.7557 39.9062H28.1647C26.962 39.9073 25.7782 39.616 24.7221 39.059C23.6661 38.5021 22.7714 37.6974 22.1204 36.7188C21.4655 35.7487 21.091 34.6265 21.036 33.469C20.9809 32.3114 21.2474 31.1607 21.8075 30.1366L27.7694 18.9803L30.1081 21.5781L25.5955 30.025L40.1545 21.0044C40.4886 20.793 40.8958 20.7188 41.2866 20.798C41.6773 20.8772 42.0195 21.1034 42.2379 21.4267C42.4563 21.7501 42.533 22.1441 42.4511 22.5222C42.3693 22.9003 42.1356 23.2315 41.8014 23.4428L24.5085 34.1369C24.6011 34.4291 24.7341 34.7079 24.9038 34.9656C25.2088 35.4074 25.6102 35.779 26.0797 36.0544C26.5492 36.3297 27.0754 36.5021 27.6212 36.5594L41.4226 27.9531C41.7545 27.7529 42.1542 27.6862 42.5362 27.7673C42.9183 27.8483 43.2524 28.0707 43.4674 28.3868C43.6823 28.703 43.7611 29.088 43.6867 29.4596C43.6124 29.8312 43.3909 30.1599 43.0696 30.3756L33.0067 36.6231H45.8529L49.822 28.9413C50.5305 27.5807 50.8673 26.0672 50.8003 24.5451C50.7332 23.0229 50.2647 21.5427 49.4392 20.2453C48.6136 18.948 47.4587 17.8768 46.0843 17.1337C44.7098 16.3905 43.1617 16.0003 41.5873 16H26.4189C26.1103 15.9994 25.8076 16.0828 25.5456 16.2406C25.2835 16.3984 25.0725 16.6243 24.9367 16.8925L17.9866 30.1684C17.2781 31.529 16.9413 33.0424 17.0084 34.5646C17.0754 36.0868 17.544 37.567 18.3695 38.8643C19.195 40.1617 20.3499 41.2329 21.7244 41.976C23.0988 42.7191 24.6469 43.1094 26.2213 43.1097H38.8204L33.1714 54.0587C32.4629 55.4193 32.1262 56.9328 32.1932 58.4549C32.2602 59.9771 32.7288 61.4573 33.5543 62.7547C34.3798 64.052 35.5348 65.1232 36.9092 65.8663C38.2836 66.6095 39.8317 66.9997 41.4062 67H56.6898C57.0235 66.9978 57.3486 66.8976 57.6222 66.7126C57.8957 66.5276 58.1047 66.2666 58.2215 65.9641L65.0398 52.8316C65.7445 51.4593 66.0708 49.9341 65.9872 48.4039C65.9035 46.8737 65.4126 45.3904 64.5622 44.0978ZM40.8297 53.5647C40.6099 53.2453 40.5298 52.8547 40.6069 52.4783C40.6841 52.1019 40.9123 51.7705 41.2415 51.5566L51.1231 45.3728C51.466 45.1615 51.8816 45.0906 52.2785 45.1758C52.6754 45.261 53.0211 45.4952 53.2395 45.827C53.4579 46.1588 53.5311 46.561 53.4431 46.9451C53.355 47.3292 53.113 47.6637 52.7701 47.875L42.8884 54.0587C42.723 54.1626 42.5381 54.2338 42.3442 54.2684C42.1503 54.303 41.9513 54.3002 41.7586 54.2603C41.5658 54.2203 41.3831 54.1439 41.2209 54.0355C41.0587 53.9271 40.9201 53.7887 40.8133 53.6284L40.8297 53.5647ZM59.3579 51.6044L44.5353 60.8162C44.3699 60.9209 44.1848 60.993 43.9905 61.0284C43.7963 61.0638 43.5967 61.0618 43.4033 61.0226C43.2098 60.9834 43.0262 60.9077 42.863 60.7998C42.6998 60.6919 42.5601 60.554 42.452 60.3939C42.3438 60.2338 42.2693 60.0546 42.2327 59.8667C42.1961 59.6787 42.1982 59.4856 42.2387 59.2984C42.2792 59.1112 42.3575 58.9335 42.4689 58.7756C42.5804 58.6176 42.7229 58.4825 42.8884 58.3778L57.7109 49.1659C57.8764 49.0613 58.0615 48.9892 58.2557 48.9538C58.45 48.9184 58.6495 48.9203 58.843 48.9596C59.0365 48.9988 59.22 49.0745 59.3833 49.1824C59.5465 49.2902 59.6862 49.4282 59.7943 49.5883C59.9024 49.7484 59.9769 49.9275 60.0135 50.1155C60.0501 50.3035 60.0481 50.4966 60.0076 50.6838C59.967 50.871 59.8888 51.0487 59.7773 51.2066C59.6658 51.3646 59.5233 51.4997 59.3579 51.6044Z"
-                      fill="white"
-                    />
-                  </svg>
-  
-                  <p class="mt-10" style="text-align: left">
-                      IMM tokens can be used in a number of ways:
-                      <ul>
-                          <li>• as fees for allowing access to your de-identified health data</li>
-                          <li>• as payment settlement layer</li>
-                          <li>• as incentive rewards</li>
-                          <li>• for staking to sample de-identified health data</li>
-                      </ul>
-                      
-                  </p>
-                </div>
+              <v-col lg="4" cols="11" align-self="center">
+                <v-row class="align-center flex-wrap flex-lg-nowrap justify-center mt-16 mt-lg-0">
+                  <div><img src="@/assets/img/ecosystem1-3.svg" alt="" /></div>
+                  <div class="mx-4">
+                    <p class="text-center text-lg-left mt-lg-0 mt-6">
+                      All necessary information about services including testing and treatment.
+                      Chatbots in a single IT system will be able to respond to low-threshold
+                      queries related to existing needs and basic knowledge
+                    </p>
+                  </div>
+                </v-row>
+                <v-row class="align-center flex-wrap flex-lg-nowrap justify-center mt-15">
+                  <div><img src="@/assets/img/ecosystem1-4.svg" alt="" /></div>
+                  <div class="mx-4">
+                    <p class="text-center text-lg-left mt-lg-0 mt-6">
+                      Mechanisms for the protection of rights, monitoring by the community of
+                      quality and access to services, the use of public resources will be
+                      strengthened
+                    </p>
+                  </div>
+                </v-row>
               </v-col>
             </v-row>
           </v-container>
         </v-tab-item>
         <v-tab-item>
-          <v-container fill-heigth style="max-width: 55%; margin: 0 auto; font-size: 18px">
-            <v-row>
-              <v-col class="d-flex flex-column justify-center">
-                <div class="d-flex flex-column align-end">
-                  <svg
-                    width="84"
-                    height="84"
-                    viewBox="0 0 84 84"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="42" cy="42" r="42" fill="#19CAC1" />
-                    <path
-                      d="M64.5622 44.0978C63.7399 42.8116 62.5905 41.7508 61.2237 41.017C59.857 40.2832 58.3187 39.9007 56.7557 39.9062H28.1647C26.962 39.9073 25.7782 39.616 24.7221 39.059C23.6661 38.5021 22.7714 37.6974 22.1204 36.7188C21.4655 35.7487 21.091 34.6265 21.036 33.469C20.9809 32.3114 21.2474 31.1607 21.8075 30.1366L27.7694 18.9803L30.1081 21.5781L25.5955 30.025L40.1545 21.0044C40.4886 20.793 40.8958 20.7188 41.2866 20.798C41.6773 20.8772 42.0195 21.1034 42.2379 21.4267C42.4563 21.7501 42.533 22.1441 42.4511 22.5222C42.3693 22.9003 42.1356 23.2315 41.8014 23.4428L24.5085 34.1369C24.6011 34.4291 24.7341 34.7079 24.9038 34.9656C25.2088 35.4074 25.6102 35.779 26.0797 36.0544C26.5492 36.3297 27.0754 36.5021 27.6212 36.5594L41.4226 27.9531C41.7545 27.7529 42.1542 27.6862 42.5362 27.7673C42.9183 27.8483 43.2524 28.0707 43.4674 28.3868C43.6823 28.703 43.7611 29.088 43.6867 29.4596C43.6124 29.8312 43.3909 30.1599 43.0696 30.3756L33.0067 36.6231H45.8529L49.822 28.9413C50.5305 27.5807 50.8673 26.0672 50.8003 24.5451C50.7332 23.0229 50.2647 21.5427 49.4392 20.2453C48.6136 18.948 47.4587 17.8768 46.0843 17.1337C44.7098 16.3905 43.1617 16.0003 41.5873 16H26.4189C26.1103 15.9994 25.8076 16.0828 25.5456 16.2406C25.2835 16.3984 25.0725 16.6243 24.9367 16.8925L17.9866 30.1684C17.2781 31.529 16.9413 33.0424 17.0084 34.5646C17.0754 36.0868 17.544 37.567 18.3695 38.8643C19.195 40.1617 20.3499 41.2329 21.7244 41.976C23.0988 42.7191 24.6469 43.1094 26.2213 43.1097H38.8204L33.1714 54.0587C32.4629 55.4193 32.1262 56.9328 32.1932 58.4549C32.2602 59.9771 32.7288 61.4573 33.5543 62.7547C34.3798 64.052 35.5348 65.1232 36.9092 65.8663C38.2836 66.6095 39.8317 66.9997 41.4062 67H56.6898C57.0235 66.9978 57.3486 66.8976 57.6222 66.7126C57.8957 66.5276 58.1047 66.2666 58.2215 65.9641L65.0398 52.8316C65.7445 51.4593 66.0708 49.9341 65.9872 48.4039C65.9035 46.8737 65.4126 45.3904 64.5622 44.0978ZM40.8297 53.5647C40.6099 53.2453 40.5298 52.8547 40.6069 52.4783C40.6841 52.1019 40.9123 51.7705 41.2415 51.5566L51.1231 45.3728C51.466 45.1615 51.8816 45.0906 52.2785 45.1758C52.6754 45.261 53.0211 45.4952 53.2395 45.827C53.4579 46.1588 53.5311 46.561 53.4431 46.9451C53.355 47.3292 53.113 47.6637 52.7701 47.875L42.8884 54.0587C42.723 54.1626 42.5381 54.2338 42.3442 54.2684C42.1503 54.303 41.9513 54.3002 41.7586 54.2603C41.5658 54.2203 41.3831 54.1439 41.2209 54.0355C41.0587 53.9271 40.9201 53.7887 40.8133 53.6284L40.8297 53.5647ZM59.3579 51.6044L44.5353 60.8162C44.3699 60.9209 44.1848 60.993 43.9905 61.0284C43.7963 61.0638 43.5967 61.0618 43.4033 61.0226C43.2098 60.9834 43.0262 60.9077 42.863 60.7998C42.6998 60.6919 42.5601 60.554 42.452 60.3939C42.3438 60.2338 42.2693 60.0546 42.2327 59.8667C42.1961 59.6787 42.1982 59.4856 42.2387 59.2984C42.2792 59.1112 42.3575 58.9335 42.4689 58.7756C42.5804 58.6176 42.7229 58.4825 42.8884 58.3778L57.7109 49.1659C57.8764 49.0613 58.0615 48.9892 58.2557 48.9538C58.45 48.9184 58.6495 48.9203 58.843 48.9596C59.0365 48.9988 59.22 49.0745 59.3833 49.1824C59.5465 49.2902 59.6862 49.4282 59.7943 49.5883C59.9024 49.7484 59.9769 49.9275 60.0135 50.1155C60.0501 50.3035 60.0481 50.4966 60.0076 50.6838C59.967 50.871 59.8888 51.0487 59.7773 51.2066C59.6658 51.3646 59.5233 51.4997 59.3579 51.6044Z"
-                      fill="white"
-                    />
-                  </svg>
-  
-                  <p class="mt-10" style="text-align: right">
-                    AIDS tokens are a new digital asset unique to the Immunify.Life ecosystem which
-                    will be used to transfer value between users, healthcare providers and other
-                    participants. AIDS tokens power the Immunify.Life ecosystem.
-                  </p>
-                </div>
+          <v-container grid-list-md>
+            <v-row class="justify-center">
+              <v-col lg="4" cols="11" align-self="center">
+                <v-row class="flex-wrap justify-center justify-lg-end mt-16 mt-lg-0">
+                  <div class="mx-4 mt-lg-0 mt-15">
+                    <p class="text-center text-lg-right">
+                      BlockAids tokens are a new currency with a great utility. Our tokens will
+                      stimulate the community members to undertake actions that will increase their
+                      health and the health of community in general, i.e. regular testing, pills
+                      taking, communication with psychologists, etc.
+                    </p>
+                  </div>
+                  <div class="order-first">
+                    <img src="@/assets/img/ecosystem1-3.svg" alt="" />
+                  </div>
+                </v-row>
               </v-col>
-              <v-col>
-                <div class="d-flex justify-center">
-                  <img src="@/assets/img/ecosystem-3.jpg" alt="" />
-                </div>
+              <v-col col="11" lg="4" class="text-center order-last order-lg-0 pa-0 mt-lg-0 mt-15">
+                <img src="@/assets/img/ecosystem-2.jpg" alt="" />
               </v-col>
-              <v-col class="d-flex flex-column justify-center">
-                <div class="d-flex flex-column align-start">
-                  <svg
-                    width="84"
-                    height="84"
-                    viewBox="0 0 84 84"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <circle cx="42" cy="42" r="42" fill="#19CAC1" />
-                    <path
-                      d="M64.5622 44.0978C63.7399 42.8116 62.5905 41.7508 61.2237 41.017C59.857 40.2832 58.3187 39.9007 56.7557 39.9062H28.1647C26.962 39.9073 25.7782 39.616 24.7221 39.059C23.6661 38.5021 22.7714 37.6974 22.1204 36.7188C21.4655 35.7487 21.091 34.6265 21.036 33.469C20.9809 32.3114 21.2474 31.1607 21.8075 30.1366L27.7694 18.9803L30.1081 21.5781L25.5955 30.025L40.1545 21.0044C40.4886 20.793 40.8958 20.7188 41.2866 20.798C41.6773 20.8772 42.0195 21.1034 42.2379 21.4267C42.4563 21.7501 42.533 22.1441 42.4511 22.5222C42.3693 22.9003 42.1356 23.2315 41.8014 23.4428L24.5085 34.1369C24.6011 34.4291 24.7341 34.7079 24.9038 34.9656C25.2088 35.4074 25.6102 35.779 26.0797 36.0544C26.5492 36.3297 27.0754 36.5021 27.6212 36.5594L41.4226 27.9531C41.7545 27.7529 42.1542 27.6862 42.5362 27.7673C42.9183 27.8483 43.2524 28.0707 43.4674 28.3868C43.6823 28.703 43.7611 29.088 43.6867 29.4596C43.6124 29.8312 43.3909 30.1599 43.0696 30.3756L33.0067 36.6231H45.8529L49.822 28.9413C50.5305 27.5807 50.8673 26.0672 50.8003 24.5451C50.7332 23.0229 50.2647 21.5427 49.4392 20.2453C48.6136 18.948 47.4587 17.8768 46.0843 17.1337C44.7098 16.3905 43.1617 16.0003 41.5873 16H26.4189C26.1103 15.9994 25.8076 16.0828 25.5456 16.2406C25.2835 16.3984 25.0725 16.6243 24.9367 16.8925L17.9866 30.1684C17.2781 31.529 16.9413 33.0424 17.0084 34.5646C17.0754 36.0868 17.544 37.567 18.3695 38.8643C19.195 40.1617 20.3499 41.2329 21.7244 41.976C23.0988 42.7191 24.6469 43.1094 26.2213 43.1097H38.8204L33.1714 54.0587C32.4629 55.4193 32.1262 56.9328 32.1932 58.4549C32.2602 59.9771 32.7288 61.4573 33.5543 62.7547C34.3798 64.052 35.5348 65.1232 36.9092 65.8663C38.2836 66.6095 39.8317 66.9997 41.4062 67H56.6898C57.0235 66.9978 57.3486 66.8976 57.6222 66.7126C57.8957 66.5276 58.1047 66.2666 58.2215 65.9641L65.0398 52.8316C65.7445 51.4593 66.0708 49.9341 65.9872 48.4039C65.9035 46.8737 65.4126 45.3904 64.5622 44.0978ZM40.8297 53.5647C40.6099 53.2453 40.5298 52.8547 40.6069 52.4783C40.6841 52.1019 40.9123 51.7705 41.2415 51.5566L51.1231 45.3728C51.466 45.1615 51.8816 45.0906 52.2785 45.1758C52.6754 45.261 53.0211 45.4952 53.2395 45.827C53.4579 46.1588 53.5311 46.561 53.4431 46.9451C53.355 47.3292 53.113 47.6637 52.7701 47.875L42.8884 54.0587C42.723 54.1626 42.5381 54.2338 42.3442 54.2684C42.1503 54.303 41.9513 54.3002 41.7586 54.2603C41.5658 54.2203 41.3831 54.1439 41.2209 54.0355C41.0587 53.9271 40.9201 53.7887 40.8133 53.6284L40.8297 53.5647ZM59.3579 51.6044L44.5353 60.8162C44.3699 60.9209 44.1848 60.993 43.9905 61.0284C43.7963 61.0638 43.5967 61.0618 43.4033 61.0226C43.2098 60.9834 43.0262 60.9077 42.863 60.7998C42.6998 60.6919 42.5601 60.554 42.452 60.3939C42.3438 60.2338 42.2693 60.0546 42.2327 59.8667C42.1961 59.6787 42.1982 59.4856 42.2387 59.2984C42.2792 59.1112 42.3575 58.9335 42.4689 58.7756C42.5804 58.6176 42.7229 58.4825 42.8884 58.3778L57.7109 49.1659C57.8764 49.0613 58.0615 48.9892 58.2557 48.9538C58.45 48.9184 58.6495 48.9203 58.843 48.9596C59.0365 48.9988 59.22 49.0745 59.3833 49.1824C59.5465 49.2902 59.6862 49.4282 59.7943 49.5883C59.9024 49.7484 59.9769 49.9275 60.0135 50.1155C60.0501 50.3035 60.0481 50.4966 60.0076 50.6838C59.967 50.871 59.8888 51.0487 59.7773 51.2066C59.6658 51.3646 59.5233 51.4997 59.3579 51.6044Z"
-                      fill="white"
-                    />
-                  </svg>
-  
-                  <p class="mt-10" style="text-align: left">
-                      IMM tokens can be used in a number of ways:
-                      <ul>
-                          <li>• as fees for allowing access to your de-identified health data</li>
-                          <li>• as payment settlement layer</li>
-                          <li>• as incentive rewards</li>
-                          <li>• for staking to sample de-identified health data</li>
-                      </ul>
-                      
-                  </p>
-                </div>
+              <v-col lg="4" cols="11" align-self="center">
+                <v-row class="flex-wrap justify-center justify-lg-start mt-16 mt-lg-0">
+                  <div class="mx-4 mt-lg-0 mt-15">
+                    <p class="text-center text-lg-left">
+                      We are going to release a special governance token that will allow community
+                      members (token holders) to vote for the most important decisions, i.e. new
+                      ways of treatment adoption, important events organization, community
+                      expansion, etc.
+                    </p>
+                  </div>
+                  <div class="order-first">
+                    <img src="@/assets/img/ecosystem1-3.svg" alt="" />
+                  </div>
+                </v-row>
+              </v-col>
+            </v-row>
+          </v-container>
+        </v-tab-item>
+        <v-tab-item>
+          <v-container grid-list-md>
+            <v-row class="justify-center">
+              <v-col lg="4" cols="11" align-self="center">
+                <v-row class="flex-wrap justify-center justify-lg-end mt-16 mt-lg-0">
+                  <div class="mx-4 mt-lg-0 mt-15">
+                    <p class="text-center text-lg-right">
+                      DAOs create new ways to organize the community by providing a structure that
+                      communities can take advantage of to advocacy, raise funds, and deliver
+                      important services. DAOs allow for more transparency in decision making and in
+                      the management of organization or movement.
+                    </p>
+                  </div>
+                  <div class="order-first">
+                    <img src="@/assets/img/ecosystem1-3.svg" alt="" />
+                  </div>
+                </v-row>
+              </v-col>
+              <v-col col="11" lg="4" class="text-center order-last order-lg-0 pa-0 mt-lg-0 mt-15">
+                <img src="@/assets/img/ecosystem-3.jpg" alt="" class="third-slide" />
+              </v-col>
+              <v-col lg="4" cols="11" align-self="center">
+                <v-row class="flex-wrap justify-center justify-lg-start mt-16 mt-lg-0">
+                  <div class="mx-4 mt-lg-0 mt-15">
+                    <p class="text-center text-lg-left">
+                      Through the use of smart contracts, DAOs enable community to take ownership
+                      over causes they care about, and to hold organizations accountable. Through
+                      tokenization, DAOs can incentivize community members to engage in charitable
+                      actions and contribute to the DAO’s mission.
+                    </p>
+                  </div>
+                  <div class="order-first">
+                    <img src="@/assets/img/ecosystem1-3.svg" alt="" />
+                  </div>
+                </v-row>
               </v-col>
             </v-row>
           </v-container>
         </v-tab-item>
       </v-tabs>
-    <!-- <v-tabs-items v-model="tab">
-                <v-tab-item>
-                    FSDsdf
-                </v-tab-item>
-                <v-tab-item>
-                    FSDsdfsdfdsf
-                </v-tab-item>
-            </v-tabs-items> -->
+    </v-container>
   </v-container>
 </template>
 
-<script></script>
+<script>
+export default {
+  data: () => ({
+    tab: undefined,
+  }),
+};
+</script>
 
 <style lang="scss">
+@import '@/assets/main.scss';
 .tab-list {
-  margin-right: 100px;
-  margin-left: 100px;
-  font-size: 18px;
+  font-size: 1.2rem !important;
 }
-.second {
-  margin-right: 300px;
-  margin-left: 300px;
+.third-slide {
+  @include rwdmax(390) {
+    width: 200px;
+  }
 }
-.v-tabs-bar__content {
-    gap: 50px !important;
+
+.v-slide-group__wrapper {
+  @include rwdmax(460) {
+    justify-content: center;
+  }
+}
+.v-slide-group__content {
+  @include rwdmax(460) {
+    display: block;
+    flex: 0;
+    flex-direction: column;
+    height: 10px;
+  }
+}
+.v-tabs-slider-wrapper {
+  @include rwdmax(460) {
+    height: 0px !important;
+    position: relative;
+    contain:size;
+    display: block;
+  }
+}
+.v-slide-group__wrapper {
+  @include rwdmax(460) {
+    display: block;
+  }
+}
+
+.v-slide-group {
+  height: 85px;
+  margin-bottom: 20px;
 }
 .v-tab {
-    color: black !important;
-    font-size: 1.2rem;
+  font-size: 18px;
+  margin-top: 5px;
 }
 </style>

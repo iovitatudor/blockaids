@@ -1,5 +1,5 @@
 <template>
-  <v-container grid-list-md class="my-14">
+  <v-container grid-list-md class="my-14" id="ecosystem">
     <p class="title-h1 text-center">Ecosystem</p>
     <v-tabs centered  v-model="tab">
         <v-tab ripple="false"> Mobile App </v-tab>

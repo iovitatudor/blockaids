@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid>
+  <v-container fluid id="team">
     <v-container grid-list-md class="my-14">
       <h1 class="title-h1 text-center mb-5">Our Team</h1>
       <v-row justify="center" align="center" class="mt-16">

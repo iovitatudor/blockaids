@@ -16,7 +16,7 @@
             our project.
           </p>
         </v-col>
-        <v-col md="5" sm="0">
+        <v-col md="5" cols="0">
           <v-img
             src="@/assets/img/HeroBanner.png"
             max-height="700"
@@ -47,13 +47,13 @@ export default {
           this.$refs.name.classList.add("text-center");
           this.$refs.subtitle.classList.add("text-center");
           this.$refs.subsubtitle.classList.add("text-center");
-          this.$refs.logo.classList.add("logo-small");
         }
       },
       deep: true,
     },
   },
   created() {
+    window.addEventListener("DOMContentLoaded", this.updateWidth);
     window.addEventListener("resize", this.updateWidth);
   },
 };

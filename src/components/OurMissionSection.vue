@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="bckg">
+  <v-container fluid class="bckg" id="mission">
     <v-container grid-list-md class="my-14">
       <p class="title-h1 text-center">Our Mission</p>
 

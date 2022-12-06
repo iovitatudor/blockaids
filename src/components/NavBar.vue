@@ -4,7 +4,7 @@
       <nav>
         <div v-show="!mobile" class="navigation">
           <div class="branding">
-            <LogoIcon width="90" />
+            <LogoIcon class="logo-header" height="50" />
           </div>
           <ul class="navigation__list">
             <li><a to="#" class="menu-item">About</a></li>
@@ -16,15 +16,15 @@
           <v-btn class="btn-main">Connect wallet</v-btn>
         </div>
 
-        <!-- <div class="icon">
-          <IconMenu
+        <div class="icon">
+          <MenuIcon
             @click.native="toggleMobileNav"
             v-show="mobile"
             class="menu-icon"
             :class="{ 'icon-active': mobileNav }"
             width="30"
           />
-        </div> -->
+        </div>
 
         <transition name="mobile-nav">
           <div v-show="mobileNav" class="dropdown-nav text-center">
@@ -44,10 +44,12 @@
 </template>
 <script>
 import LogoIcon from "./icons/LogoIcon.vue";
+import MenuIcon from "./icons/MenuIcon.vue";
 export default {
   name: "navMenu",
   components: {
     LogoIcon,
+    MenuIcon,
   },
   data: () => ({
     width: 0,
@@ -76,6 +78,10 @@ export default {
 };
 </script>
 <style lang="scss">
+.logo-header {
+  width: 160px !important;
+}
+
 .btn-main {
   border-radius: 40px;
   background-color: $secondary !important;
@@ -85,6 +91,7 @@ export default {
 }
 
 .menu-item {
+  font-weight: 500;
   font-size: 16px;
   color: #000 !important;
   margin-left: 40px;

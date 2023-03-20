@@ -25,7 +25,7 @@ export default {
         id: 0,
         photo: "team1.jpg",
         name: "Constantin Cearanovski",
-        role: "Board member – NGO Positive Initiative",
+        role: "CEO Digital Public Health consortium",
       },
       {
         id: 1,
@@ -38,6 +38,12 @@ export default {
         photo: "team3.png",
         name: "Andrei Tintari",
         role: "Web3 Moldova Community Founder, CTO",
+      },
+      {
+        id: 2,
+        photo: "image-Max-591.png",
+        name: "Maxim Demchenko",
+        role: "NGO Positive Initiative Business Advisor",
       },
     ],
   }),

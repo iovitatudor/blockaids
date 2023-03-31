@@ -37,7 +37,7 @@ export default {
         ],
       },
       {
-        date: "2023 Q1",
+        date: "2023",
         text: [
           "- Creating DAO for communities",
           "- Creating DAOs for small communities (i.e. groups of risk)",
@@ -45,7 +45,7 @@ export default {
         ],
       },
       {
-        date: "2023 Q2",
+        date: "2023",
         text: [
           "Building Web/Mobile app on blockchain:",
           "- Identification (KYC)",
@@ -55,7 +55,7 @@ export default {
         ],
       },
       {
-        date: "2023 Q3",
+        date: "2024",
         text: [
           "Building new ecosystem of HIV infected and  groups of risk:",
           "- Anonymous social groups",

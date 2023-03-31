@@ -2,9 +2,9 @@
   <v-app>
     <NavBar />
     <HeroSection />
-    <OurMissionSection />
     <SolutionSection />
     <EcosystemSection />
+    <OurMissionSection />
     <PartnersSection />
     <TeamSection />
     <RoadmapSection />

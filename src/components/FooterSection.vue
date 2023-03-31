@@ -5,24 +5,24 @@
         <v-col align="center" md="2" cols="12">
           <LogoIcon />
           <v-row justify="center" align="center" class="mt-5">
-            <a
-              class="mx-2"
-              target="_blank"
-              href="https://ro-ro.facebook.com/initiativapozitiva/"
-              ><FbIcon
-            /></a>
-            <a
-              class="mx-2"
-              target="_blank"
-              href="https://www.instagram.com/positivepeople.md/"
-              ><InstIcon
-            /></a>
-            <a
-              class="mx-2"
-              target="_blank"
-              href="https://www.youtube.com/c/InitiativaPozitiva"
-              ><YtIcon /> </a
-          ></v-row>
+<!--            <a-->
+<!--              class="mx-2"-->
+<!--              target="_blank"-->
+<!--              href="https://ro-ro.facebook.com/initiativapozitiva/"-->
+<!--              ><FbIcon-->
+<!--            /></a>-->
+<!--            <a-->
+<!--              class="mx-2"-->
+<!--              target="_blank"-->
+<!--              href="https://www.instagram.com/positivepeople.md/"-->
+<!--              ><InstIcon-->
+<!--            /></a>-->
+<!--            <a-->
+<!--              class="mx-2"-->
+<!--              target="_blank"-->
+<!--              href="https://www.youtube.com/c/InitiativaPozitiva"-->
+<!--              ><YtIcon /> </a>-->
+          </v-row>
         </v-col>
         <v-col align-self="center" md="6" cols="12">
           <v-row>
@@ -50,7 +50,7 @@
                 <li class="footer__text"><b>Keep in touch</b></li>
                 <li class="footer__text">
                   <a class="footer__link" href="mailto:aidsblock@gmail.com"
-                    ><b>Mail</b>:: aidsblock@gmail.com</a
+                    ><b>Mail</b>:: info@blockaids.online</a
                   >
                 </li>
               </ul>
@@ -63,11 +63,11 @@
 </template>
 <script>
 import LogoIcon from "./icons/LogoIcon.vue";
-import FbIcon from "./icons/FbIcon.vue";
-import InstIcon from "./icons/InstIcon.vue";
-import YtIcon from "./icons/YtIcon.vue";
+// import FbIcon from "./icons/FbIcon.vue";
+// import InstIcon from "./icons/InstIcon.vue";
+// import YtIcon from "./icons/YtIcon.vue";
 
-export default { components: { LogoIcon, FbIcon, InstIcon, YtIcon } };
+export default { components: { LogoIcon } };
 </script>
 <style lang="scss">
 .footer {

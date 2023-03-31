@@ -5,7 +5,8 @@
     ref="row"
     :class="[this.item.flex == 1 ? flexRow : '', 'mt-16 d-flex']"
   >
-    <v-col md="6" sm="12">
+    <v-col md="6" sm="12" class="relative-image">
+      <div class="absolute-cover"></div>
       <v-img :src="imgUrl" max-height="400" max-width="400"> </v-img>
     </v-col>
     <v-col md="6" sm="12">
@@ -37,5 +38,16 @@ export default {
 
 .flex-reverse {
   flex-direction: row-reverse !important;
+}
+
+.relative-image {
+  position: relative;
+  .absolute-cover {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: #f5f9fc;
+    z-index: 9;
+  }
 }
 </style>

@@ -3,18 +3,27 @@
     <v-container grid-list-md class="my-14">
       <v-row justify="space-between" align="center" class="mt-16">
         <v-col md="6" sm="12">
-          <h1 class="name" ref="name">BlockAids</h1>
+          <h1 class="name heading" ref="name">Block<span>Aids</span></h1>
           <p class="subtitle" ref="subtitle">
             Transforming the healthcare landscape all over the world
           </p>
           <p class="subsubtitle" ref="subsubtitle">
-            We are launching a first decentralized Ecosystem for HIV infected
-            and risk groups beneficiaries that included: Transparent
-            Informational System, Web/Mobile app on blockchain, DAO and a
-            decentralized research Ecosystem. Additionally, we are launching a
-            NFT collection that will be distributed among early supporters of
-            our project.
+            We are launching a first decentralized Ecosystem for people living with HIV and by key and marginalised
+            populations Transparent Informational System, Web/Mobile app on blockchain, DAO and a decentralized research
+            Ecosystem. Additionally, we are launching a NFT collection that will be distributed among early supporters
+            of our project.
+            <!--            We are launching a first decentralized Ecosystem for HIV infected-->
+            <!--            and risk groups beneficiaries that included: Transparent-->
+            <!--            Informational System, Web/Mobile app on blockchain, DAO and a-->
+            <!--            decentralized research Ecosystem. Additionally, we are launching a-->
+            <!--            NFT collection that will be distributed among early supporters of-->
+            <!--            our project.-->
           </p>
+          <b class="mt-5">  powered by</b>
+          <v-img
+            src="@/assets/partners-images/unaids.png"
+            contain
+          ></v-img>
         </v-col>
         <v-col md="5" cols="0">
           <v-img
@@ -59,6 +68,16 @@ export default {
 };
 </script>
 <style lang="scss">
+.heading {
+  color: #58cac1 !important;
+  margin-right: 10px;
+
+  span {
+    color: #de342f !important;
+    text-transform: uppercase;
+  }
+}
+
 .name {
   font-size: 100px;
   color: rgb(0, 0, 0);

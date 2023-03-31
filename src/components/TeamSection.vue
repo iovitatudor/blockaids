@@ -40,10 +40,16 @@ export default {
         role: "Web3 Moldova Community Founder, CTO",
       },
       {
-        id: 2,
+        id: 3,
         photo: "image-Max-591.png",
         name: "Maxim Demchenko",
-        role: "NGO Positive Initiative Business Advisor",
+        role: "Public health domain expert",
+      },
+      {
+        id: 4,
+        photo: "alexandra-image.png",
+        name: "Alexandra Volgina",
+        role: "Human rights protection and advocacy expert",
       },
     ],
   }),

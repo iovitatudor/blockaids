@@ -28,7 +28,7 @@ export default {
     steps: [
       {
         icon: "solution_icon1.svg",
-        text: "The information system through mobile APP will provide online access to medical and social services for key groups and PLHIV on the basis of a one-stop shop for community-based organizations, as well as organizations of state medical structures.",
+        text: "The information system through mobile APP will provide online access to medical and social services for people living with HIV and by key and marginalised populations on the basis of a one-stop shop for community-based organizations, as well as organizations of state medical structures.",
       },
       {
         icon: "solution_icon2.svg",
@@ -36,11 +36,11 @@ export default {
       },
       {
         icon: "solution_icon3.svg",
-        text: "A DAO for each community (AIDS, LGBT, Sexual workers, drug users) that allows members to participate equally in important decisions voting",
+        text: "A DAO for each community (people living with HIV, LGBT, Sexual workers, Drug users) that allows members to participate equally in important decisions voting",
       },
       {
         icon: "solution_icon4.svg",
-        text: "Decentralized ecosystem will provide the community with all necessary learning and communication resources, i.e. web pages with information, social networks for communication, learn2earn, events and NFT rewards.",
+        text: "Decentralized ecosystem will provide the community with all necessary learning and communication resources, i.e. web pages with information, social networks for communication, learn2earn, events and NFT rewards",
       },
     ],
   }),

@@ -19,11 +19,13 @@
             <!--            NFT collection that will be distributed among early supporters of-->
             <!--            our project.-->
           </p>
-          <b class="mt-5">  powered by</b>
-          <v-img
-            src="@/assets/partners-images/unaids.png"
-            contain
-          ></v-img>
+          <div class="powered-by">
+            <b class="mt-5">  powered by</b>
+            <div class="image-corner"></div>
+            <v-img
+              src="@/assets/partners-images/unaids.png"
+              contain
+            ></v-img></div>
         </v-col>
         <v-col md="5" cols="0">
           <v-img
@@ -101,5 +103,17 @@ export default {
   font-weight: 400;
   font-size: 18px;
   line-height: 160%;
+}
+.powered-by {
+  position: relative;
+  .image-corner {
+    position: absolute;
+    background-color: #FFF;
+    width: 30%;
+    height: 40px;
+    right: 0;
+    top: 0;
+    z-index: 9;
+  }
 }
 </style>

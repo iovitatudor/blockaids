@@ -33,7 +33,7 @@ export default {
       {
         date: "2022",
         text: [
-          "- Building community of HIV infected and  groups of risk in Moldova (more than 30k membars)",
+          "- Building community of people living with HIV and  groups of risk in Moldova (more than 30k membars)",
         ],
       },
       {
@@ -57,7 +57,7 @@ export default {
       {
         date: "2024",
         text: [
-          "Building new ecosystem of HIV infected and  groups of risk:",
+          "Building new ecosystem of people living with HIV and  groups of risk:",
           "- Anonymous social groups",
           "- Learning resources, incl. Learn2Earn",
           "- Events organization",

@@ -4,7 +4,7 @@
       <nav class="my-3">
         <div v-show="!mobile" class="navigation">
           <div class="branding">
-            <LogoIcon class="logo-header" height="50" />
+            <LogoIcon class="logo-header" height="50"/>
           </div>
           <ul class="navigation__list">
             <li><a href="#mission" class="menu-item">Our mission</a></li>
@@ -13,9 +13,11 @@
             <li><a href="#team" class="menu-item">Our Team</a></li>
             <li><a href="#roadmap" class="menu-item">Roadmap</a></li>
           </ul>
-          <PopupForm />
+          <PopupForm/>
+          <a href="https://nft.blockaids.online/" target="_blank" class="btn-main btn-main-collections">NFT
+            Collection</a>
         </div>
-        <LogoIcon class="logo-header" height="50" v-show="mobile" />
+        <LogoIcon class="logo-header" height="50" v-show="mobile"/>
         <v-spacer></v-spacer>
         <div class="icon">
           <MenuIcon
@@ -36,7 +38,9 @@
               <li><a to="#" class="menu-item">Roadmap</a></li>
               <li><a class="menu-item">PitchDeck</a></li>
             </ul>
-            <PopupForm />
+            <PopupForm/>
+            <a href="https://nft.blockaids.online/" target="_blank" class="btn-main btn-main-collections">NFT
+              Collection</a>
           </div>
         </transition>
       </nav>
@@ -48,6 +52,7 @@
 import LogoIcon from "./icons/LogoIcon.vue";
 import MenuIcon from "./icons/MenuIcon.vue";
 import PopupForm from "./ui/PopupForm.vue";
+
 export default {
   name: "navMenu",
   components: {
@@ -82,6 +87,7 @@ export default {
 };
 </script>
 <style lang="scss">
+
 .logo-header {
   width: 160px !important;
 }
@@ -128,6 +134,7 @@ header {
     @media (min-width: 1185px) {
       max-width: 1185px;
     }
+
     ul,
     .link {
       font-weight: 500;
@@ -135,6 +142,7 @@ header {
       list-style: none;
       text-decoration: none;
     }
+
     .link {
       font-size: 18px;
       transition: 0.5s ease all;
@@ -146,6 +154,7 @@ header {
         border-color: $primary;
       }
     }
+
     .branding {
       display: flex;
       align-items: center;
@@ -220,5 +229,11 @@ header {
       }
     }
   }
+}
+
+.btn-main-collections {
+  background-color: #58cac1 !important;
+  padding: 6px 16px;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
 }
 </style>

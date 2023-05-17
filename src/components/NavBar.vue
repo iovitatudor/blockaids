@@ -14,11 +14,11 @@
             <li><a href="#roadmap" class="menu-item">Roadmap</a></li>
           </ul>
           <PopupForm/>
-          <a href="https://nft.blockaids.online/" target="_blank" class="btn-main btn-main-collections">NFT
+          <a href="https://nft.blockaids.world/" target="_blank" class="btn-main btn-main-collections">NFT
             Collection</a>
         </div>
         <LogoIcon class="logo-header" height="50" v-show="mobile"/>
-        <v-spacer></v-spacer>
+        <!--        <v-spacer></v-spacer>-->
         <div class="icon">
           <MenuIcon
             @click.native="toggleMobileNav"
@@ -38,7 +38,7 @@
               <li><a to="#" class="menu-item">Roadmap</a></li>
               <li><a class="menu-item">PitchDeck</a></li>
             </ul>
-            <PopupForm/>
+            <!--            <PopupForm/>-->
             <a href="https://nft.blockaids.online/" target="_blank" class="btn-main btn-main-collections">NFT
               Collection</a>
           </div>
@@ -80,6 +80,9 @@ export default {
     toggleMobileNav() {
       this.mobileNav = !this.mobileNav;
     },
+  },
+  mounted() {
+    this.updateWidth();
   },
   created() {
     window.addEventListener("resize", this.updateWidth);
@@ -177,12 +180,15 @@ header {
     }
 
     .icon {
-      display: flex;
+      display: block;
       align-items: center;
-      position: absolute;
+      position: relative;
       top: 0;
       right: 24px;
       height: 100%;
+      margin-left: 120px;
+      margin-top: 5px;
+      text-align: right;
 
       svg {
         fill: #fff;

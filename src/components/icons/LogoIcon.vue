@@ -1,5 +1,5 @@
 <template>
-  <img src="@/assets/Logo-transparent.png" alt="">
+  <img src="@/assets/Logo-transparent.png" width="100">
 <!--  <svg-->
 <!--    width="180"-->
 <!--    height="27"-->

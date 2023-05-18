@@ -4,20 +4,23 @@
       <nav class="my-3">
         <div v-show="!mobile" class="navigation">
           <div class="branding">
-            <LogoIcon class="logo-header" height="50"/>
+            <LogoIcon class="logo-header"/>
           </div>
           <ul class="navigation__list">
-            <li><a href="#mission" class="menu-item">Our mission</a></li>
-            <li><a href="#solution" class="menu-item">Our Solution</a></li>
+            <li><a href="#mission" class="menu-item">Mission</a></li>
+            <li><a href="#solution" class="menu-item">Solution</a></li>
             <li><a href="#ecosystem" class="menu-item">Ecosystem</a></li>
-            <li><a href="#team" class="menu-item">Our Team</a></li>
+            <li><a href="#team" class="menu-item">Team</a></li>
             <li><a href="#roadmap" class="menu-item">Roadmap</a></li>
           </ul>
-          <PopupForm/>
-          <a href="https://nft.blockaids.world/" target="_blank" class="btn-main btn-main-collections">NFT
-            Collection</a>
+          <div class="btns-wrapper">
+            <a href="https://nft.blockaids.world/" target="_blank" class="btn-main btn-main-collections">NFT
+              Collection</a>
+            <PopupForm/>
+          </div>
+
         </div>
-        <LogoIcon class="logo-header" height="50" v-show="mobile"/>
+        <LogoIcon class="logo-header" v-show="mobile"/>
         <!--        <v-spacer></v-spacer>-->
         <div class="icon">
           <MenuIcon
@@ -38,7 +41,7 @@
               <li><a to="#" class="menu-item">Roadmap</a></li>
               <li><a class="menu-item">PitchDeck</a></li>
             </ul>
-            <!--            <PopupForm/>-->
+            <PopupForm/>
             <a href="https://nft.blockaids.online/" target="_blank" class="btn-main btn-main-collections">NFT
               Collection</a>
           </div>
@@ -169,7 +172,7 @@ header {
     }
 
     .navigation {
-      width: 98%;
+      width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -241,5 +244,35 @@ header {
   background-color: #58cac1 !important;
   padding: 6px 16px;
   box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+header nav .icon {
+  display: none !important;
+}
+
+header .btns-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    margin-right: 10px;
+    min-width: 140px;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header nav .icon {
+    display: block !important;
+    right: 0;
+    top: -8px;
+  }
+  .dropdown-nav button{
+    margin: 30px;
+    .v-btn__content {
+      padding: 20px !important;
+    }
+  }
 }
 </style>

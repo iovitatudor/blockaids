@@ -52,9 +52,9 @@
           ></v-img>
         </v-col>
         <v-col md="4" class="text-center">
-          <b class="mt-5">  powered by</b>
+<!--          <b class="mt-5">  powered by</b>-->
           <v-img
-            src="@/assets/partners-images/partner5.png"
+            src="@/assets/img/UNAIDS-official-logo.png"
             contain
             height="130"
           ></v-img>

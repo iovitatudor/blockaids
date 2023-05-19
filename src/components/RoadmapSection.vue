@@ -10,7 +10,7 @@
       ></v-img>
 
       <v-row class="mt-7">
-        <RoadmapCard v-for="(step, index) in steps" :key="index" :step="step" />
+        <RoadmapCard v-for="(step, index) in steps" :key="index" :step="step"/>
       </v-row>
     </v-container>
   </v-container>
@@ -31,37 +31,31 @@ export default {
     width: 0,
     steps: [
       {
-        date: "2022",
-        text: [
-          "- Building community of people living with HIV and  groups of risk in Moldova (more than 30k membars)",
-        ],
-      },
-      {
         date: "2023",
         text: [
-          "- Creating DAO for communities",
-          "- Creating DAOs for small communities (i.e. groups of risk)",
-          "- Governance token release",
-        ],
-      },
-      {
-        date: "2023",
-        text: [
-          "Building Web/Mobile app on blockchain:",
-          "- Identification (KYC)",
-          "- Transparency",
-          "- Anonymity",
-          "- Unified information and tracking system",
+          "- Development of Mobile App (Moldova) integrated with Web3",
+          "- Creating DAO for people living with HIV & key affected populations",
         ],
       },
       {
         date: "2024",
         text: [
-          "Building new ecosystem of people living with HIV and  groups of risk:",
-          "- Anonymous social groups",
-          "- Learning resources, incl. Learn2Earn",
-          "- Events organization",
-          "- NFT/token rewards programs",
+          "- Digitalization (Mobile App on the blockchain in EECA countries)",
+          "- Expanding DAO in EECA countries",
+        ],
+      },
+      {
+        date: "2025",
+        text: [
+          "- Digitalization (Mobile App on the blockchain in Africa countries)",
+          "- Expanding DAO in Africa countries"
+        ],
+      },
+      {
+        date: "2026",
+        text: [
+          "- Digitalization (Mobile App on the blockchain in rest of the world countries)",
+          "- Expanding DAO in rest of the world countries",
         ],
       },
     ],

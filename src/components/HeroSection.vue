@@ -8,7 +8,7 @@
             Transforming the healthcare landscape all over the world
           </p>
           <p class="subsubtitle" ref="subsubtitle">
-            We are launching a first decentralized Ecosystem for people living with HIV and by key and marginalised
+            We are launching a first decentralized Ecosystem for people living with HIV and for key and marginalised
             populations Transparent Informational System, Web/Mobile app on blockchain, DAO and a decentralized research
             Ecosystem. Additionally, we are launching a NFT collection that will be distributed among early supporters
             of our project.
@@ -22,10 +22,12 @@
           <div class="powered-by">
             <b class="mt-5">  powered by</b>
             <div class="image-corner"></div>
-            <v-img
-              src="@/assets/partners-images/unaids.png"
-              contain
-            ></v-img></div>
+            <img src="@/assets/img/UNAIDS-official-logo.png" width="90%">
+<!--            <v-img-->
+<!--              src="@/assets/img/UNAIDS-official-logo.png"-->
+<!--              contain-->
+<!--            ></v-img>-->
+          </div>
         </v-col>
         <v-col md="5" cols="0">
           <v-img
@@ -108,7 +110,7 @@ export default {
   position: relative;
   .image-corner {
     position: absolute;
-    background-color: #FFF;
+    //background-color: #FFF;
     width: 30%;
     height: 40px;
     right: 0;

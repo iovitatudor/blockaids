@@ -22,9 +22,10 @@
             <!--            our project.-->
           </p>
           <div class="powered-by">
-            <b class="mt-5">  powered by</b>
-            <div class="image-corner"></div>
-            <img src="@/assets/img/UNAIDS-official-logo.png" width="90%">
+            <p class="supportedBy"><span>supported by</span> UNAIDS</p>
+<!--            <b class="mt-5">  powered by</b>-->
+<!--            <div class="image-corner"></div>-->
+<!--            <img src="@/assets/img/UNAIDS-official-logo.png" width="90%">-->
 <!--            <v-img-->
 <!--              src="@/assets/img/UNAIDS-official-logo.png"-->
 <!--              contain-->

@@ -53,11 +53,12 @@
         </v-col>
         <v-col md="4" class="text-center">
 <!--          <b class="mt-5">  powered by</b>-->
-          <v-img
-            src="@/assets/img/UNAIDS-official-logo.png"
-            contain
-            height="130"
-          ></v-img>
+<!--          <v-img-->
+<!--            src="@/assets/img/UNAIDS-official-logo.png"-->
+<!--            contain-->
+<!--            height="130"-->
+<!--          ></v-img>--> <br><br>
+          <p class="supportedBy"><span>supported by</span> UNAIDS</p>
         </v-col>
         <!--        <v-img-->
         <!--          src="@/assets/img/partner1.png"-->

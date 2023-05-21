@@ -2,6 +2,8 @@
   <v-container fluid>
     <v-container grid-list-md class="my-14">
       <v-row justify="space-between" align="center" class="mt-16">
+
+
         <v-col md="6" sm="12">
           <h1 class="name heading" ref="name">Block<span>Aids</span></h1>
           <p class="subtitle" ref="subtitle">

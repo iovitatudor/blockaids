@@ -11,7 +11,7 @@
           </p>
           <p class="subsubtitle" ref="subsubtitle">
             We are launching a first decentralized Ecosystem for people living with HIV and for key and marginalised
-            populations Transparent Informational System, Web/Mobile app on blockchain, DAO and a decentralized research
+            populations Transparent Informational System, Digital Ecosystem app on blockchain, DAO and a decentralized research
             Ecosystem. Additionally, we are launching a NFT collection that will be distributed among early supporters
             of our project.
             <!--            We are launching a first decentralized Ecosystem for HIV infected-->

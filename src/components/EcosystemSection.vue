@@ -3,7 +3,7 @@
     <v-container grid-list-md class="my-14">
       <p class="title-h1 text-center">Ecosystem</p>
       <v-tabs class="tab-list" centered v-model="tab">
-        <v-tab key="mob-app"> Mobile App</v-tab>
+        <v-tab key="mob-app"> Digital Ecosystem</v-tab>
         <v-tab key="tokens"> <span class="heading">Block<span>Aids </span></span> Tokens</v-tab>
         <v-tab key="dao"> <span class="heading">Block<span>Aids </span></span>  DAO</v-tab>
         <v-tab-item>

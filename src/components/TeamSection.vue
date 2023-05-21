@@ -59,7 +59,7 @@ export default {
       },
       {
         id: 7,
-        photo: "Anna_Koshikova_CEO_Eurasian_movement_for_the_RIGHT_TO_HEALTH_IN.jpg",
+        photo: "Anna-image-640.png",
         name: "Anna Koshikova",
         role: "CEO Eurasian movement for the RIGHT TO HEALTH IN PRISONS",
       },

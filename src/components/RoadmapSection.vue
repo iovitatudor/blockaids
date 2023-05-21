@@ -33,31 +33,31 @@ export default {
       {
         date: "2023",
         text: [
-          "- Development of Mobile App (Moldova) integrated with Web3",
-          "- Creating DAO for people living with HIV & key affected populations",
+          "- Establishing a Decentralized Autonomous Organization (DAO) to empower people living with HIV and key affected populations, promoting equal participation and decision-making in the Eastern Europe and Central Asia (EECA) region.",
+          "- Leveraging blockchain technology to ensure equal rights to healthcare services, eliminate all forms of discrimination, and enhance security and transparency. This improves access to medical and social services in the EECA region.",
         ],
       },
       {
         date: "2024",
         text: [
-          "- Digitalization (Mobile App on the blockchain in EECA countries)",
-          "- Expanding DAO in EECA countries",
+          "- Expanding the DAO to include African countries.",
+          "- Expanding blockchain technology solutions in African countries.",
         ],
       },
       {
         date: "2025",
         text: [
-          "- Digitalization (Mobile App on the blockchain in Africa countries)",
-          "- Expanding DAO in Africa countries"
+          "- Expanding the DAO to cover the rest of the world.",
+          "- Expanding blockchain technology solutions to countries across the globe."
         ],
       },
-      {
-        date: "2026",
-        text: [
-          "- Digitalization (Mobile App on the blockchain in rest of the world countries)",
-          "- Expanding DAO in rest of the world countries",
-        ],
-      },
+      // {
+      //   date: "2026",
+      //   text: [
+      //     "- Digitalization (Mobile App on the blockchain in rest of the world countries)",
+      //     "- Expanding DAO in rest of the world countries",
+      //   ],
+      // },
     ],
   }),
   created() {

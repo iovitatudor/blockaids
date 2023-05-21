@@ -1,7 +1,7 @@
 <template lang="">
   <v-col
     cols="8"
-    md="3"
+    md="4"
     sm="4"
     offset-sm="1"
     offset-md="0"

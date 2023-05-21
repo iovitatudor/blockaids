@@ -51,6 +51,24 @@ export default {
         name: "Alexandra Volgina",
         role: "Human rights protection and advocacy expert",
       },
+      {
+        id: 5,
+        photo: "Dmitriev Sergii CEO Health Advocacy Coalition 640.jpg",
+        name: "Dmitriev Sergii",
+        role: "CEO Health Advocacy Coalition",
+      },
+      {
+        id: 7,
+        photo: "Anna_Koshikova_CEO_Eurasian_movement_for_the_RIGHT_TO_HEALTH_IN.jpg",
+        name: "Anna Koshikova",
+        role: "CEO Eurasian movement for the RIGHT TO HEALTH IN PRISONS",
+      },
+      {
+        id: 6,
+        photo: "Giorgi Soselia CEO Social Equation Hub 640.jpg",
+        name: "Giorgi Soselia",
+        role: "CEO Social Equation Hub",
+      },
     ],
   }),
 };

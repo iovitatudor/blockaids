@@ -5,7 +5,7 @@
         <v-col md="6" sm="12">
           <h1 class="name heading" ref="name">Block<span>Aids</span></h1>
           <p class="subtitle" ref="subtitle">
-            Transforming the healthcare landscape all over the world
+            BlockAIDS, utilizing Web 3.0 technologies, amplifies response measures to HIV/AIDS worldwide
           </p>
           <p class="subsubtitle" ref="subsubtitle">
             We are launching a first decentralized Ecosystem for people living with HIV and for key and marginalised

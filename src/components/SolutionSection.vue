@@ -36,7 +36,7 @@ export default {
       },
       {
         icon: "solution_icon3.svg",
-        text: "BlockAIDS shifts the paradigm of fundraising and funds’ distribution, creating a more transparent and decentralized model that allows communities to access resources needed for implementing priorities. This will help eliminate longstanding inequality in funding distribution, prioritizing resources based on the real needs of communities, rather than politics, power, or influence.",
+        text: "BlockAIDS changes approaches to raising and distributing funds, creating a more transparent and decentralized model that allows communities to access resources needed for implementing priorities. This will help eliminate longstanding inequality in funding distribution, prioritizing resources based on the real needs of communities, rather than politics, power, or influence.",
       },
       {
         icon: "solution_icon4.svg",

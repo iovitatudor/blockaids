@@ -69,6 +69,12 @@ export default {
         name: "Giorgi Soselia",
         role: "CEO Social Equation Hub",
       },
+      {
+        id: 7,
+        photo: "miguel.jpg",
+        name: "Miguel Francis-Santiago",
+        role: "Global Digital ID Lead, Web3 PR Executive",
+      },
     ],
   }),
 };
